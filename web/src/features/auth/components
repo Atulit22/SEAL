@@ -1,0 +1,86 @@
+function LoginPage() {
+  return (
+    <main className="min-h-screen bg-slate-950 text-white flex items-center justify-center px-6">
+      <div className="w-full max-w-md">
+        <div className="mb-8 text-center">
+          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-xl font-bold text-slate-950">
+            S
+          </div>
+
+          <h1 className="text-3xl font-bold tracking-tight">
+            SEAL
+          </h1>
+
+          <p className="mt-2 text-sm text-slate-400">
+            Secure Examination System
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-8 shadow-2xl">
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold">
+              Sign in
+            </h2>
+
+            <p className="mt-1 text-sm text-slate-400">
+              Access your authorized examination workspace.
+            </p>
+          </div>
+
+          <form className="space-y-5">
+            <div>
+              <label
+                htmlFor="email"
+                className="mb-2 block text-sm font-medium text-slate-300"
+              >
+                Email
+              </label>
+
+              <input
+                id="email"
+                type="email"
+                placeholder="name@institution.edu"
+                className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-white outline-none transition placeholder:text-slate-600 focus:border-slate-400"
+              />
+            </div>
+
+            <div>
+              <label
+                htmlFor="password"
+                className="mb-2 block text-sm font-medium text-slate-300"
+              >
+                Password
+              </label>
+
+              <input
+                id="password"
+                type="password"
+                placeholder="Enter your password"
+                className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-white outline-none transition placeholder:text-slate-600 focus:border-slate-400"
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="w-full rounded-xl bg-white px-4 py-3 text-sm font-semibold text-slate-950 transition hover:bg-slate-200"
+            >
+              Sign in
+            </button>
+          </form>
+
+          <div className="mt-6 border-t border-slate-800 pt-5 text-center">
+            <p className="text-xs text-slate-500">
+              Authorized access only
+            </p>
+
+            <p className="mt-1 text-xs text-slate-600">
+              All security-sensitive activity is logged.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+export default LoginPage;
