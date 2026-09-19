@@ -3,6 +3,7 @@ import { AppLayout } from "../components/layout/AppLayout";
 import { ModulePlaceholder } from "../components/ui/ModulePlaceholder";
 import LoginPage from "../features/auth/LoginPage";
 import DashboardPage from "../features/dashboard/DashboardPage";
+import SubjectsPage from "../features/subjects/SubjectsPage";
 
 export const router = createBrowserRouter([
   {
@@ -22,12 +23,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/subjects",
-        element: (
-          <ModulePlaceholder
-            title="Subjects"
-            description="Subjects offered by the college for the examination session."
-          />
-        ),
+        element: <SubjectsPage />,
       },
       {
         path: "/syllabus",

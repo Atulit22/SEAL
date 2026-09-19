@@ -16,7 +16,10 @@ export type IconName =
   | "eye"
   | "eyeOff"
   | "alert"
-  | "info";
+  | "info"
+  | "plus"
+  | "edit"
+  | "trash";
 
 const PATHS: Record<IconName, string> = {
   dashboard: "M3 3h7v9H3zM14 3h7v5h-7zM14 12h7v9h-7zM3 16h7v5H3z",
@@ -37,6 +40,9 @@ const PATHS: Record<IconName, string> = {
     "M3 3l18 18M10.6 5.1A10 10 0 0 1 12 5c6.4 0 10 7 10 7a17 17 0 0 1-3.2 4M6.5 6.6C3.7 8.3 2 12 2 12s3.6 7 10 7c1.7 0 3.2-.4 4.5-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2",
   alert: "M12 3l10 18H2zM12 10v5M12 18h.01",
   info: "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 11v5M12 8h.01",
+  plus: "M12 5v14M5 12h14",
+  edit: "M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4",
+  trash: "M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6",
 };
 
 interface IconProps extends Omit<SVGProps<SVGSVGElement>, "name"> {
