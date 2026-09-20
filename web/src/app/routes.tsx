@@ -4,6 +4,7 @@ import { ModulePlaceholder } from "../components/ui/ModulePlaceholder";
 import LoginPage from "../features/auth/LoginPage";
 import DashboardPage from "../features/dashboard/DashboardPage";
 import SubjectsPage from "../features/subjects/SubjectsPage";
+import SyllabusPage from "../features/syllabus/SyllabusPage";
 
 export const router = createBrowserRouter([
   {
@@ -27,12 +28,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/syllabus",
-        element: (
-          <ModulePlaceholder
-            title="Syllabus"
-            description="Units and topics that questions are validated against."
-          />
-        ),
+        element: <SyllabusPage />,
       },
       {
         path: "/questions",
