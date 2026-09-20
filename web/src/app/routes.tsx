@@ -3,6 +3,7 @@ import { AppLayout } from "../components/layout/AppLayout";
 import { ModulePlaceholder } from "../components/ui/ModulePlaceholder";
 import LoginPage from "../features/auth/LoginPage";
 import DashboardPage from "../features/dashboard/DashboardPage";
+import QuestionsPage from "../features/questions/QuestionsPage";
 import SubjectsPage from "../features/subjects/SubjectsPage";
 import SyllabusPage from "../features/syllabus/SyllabusPage";
 
@@ -32,12 +33,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/questions",
-        element: (
-          <ModulePlaceholder
-            title="Question Bank"
-            description="Questions with subject, unit, marks, difficulty and version metadata."
-          />
-        ),
+        element: <QuestionsPage />,
       },
       {
         path: "/papers",
