@@ -3,6 +3,7 @@ import { AppLayout } from "../components/layout/AppLayout";
 import { ModulePlaceholder } from "../components/ui/ModulePlaceholder";
 import LoginPage from "../features/auth/LoginPage";
 import DashboardPage from "../features/dashboard/DashboardPage";
+import PapersPage from "../features/papers/PapersPage";
 import QuestionsPage from "../features/questions/QuestionsPage";
 import SubjectsPage from "../features/subjects/SubjectsPage";
 import SyllabusPage from "../features/syllabus/SyllabusPage";
@@ -37,12 +38,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/papers",
-        element: (
-          <ModulePlaceholder
-            title="Paper Generator"
-            description="Assemble, review and version examination papers."
-          />
-        ),
+        element: <PapersPage />,
       },
       {
         path: "/security",
